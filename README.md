@@ -2,6 +2,8 @@
 
 A WooCommmerce Extension inspired by [Create Woo Extension](https://github.com/woocommerce/woocommerce/blob/trunk/packages/js/create-woo-extension/README.md).
 
+Extension to create a new "new stock information" field for simple and variable product types, and show in store.
+
 ## Getting Started
 
 ### Prerequisites
@@ -18,4 +20,3 @@ npm run build
 wp-env start
 ```
 
-Visit the added page at http://localhost:8888/wp-admin/admin.php?page=wc-admin&path=%2Fexample.
