@@ -1,0 +1,58 @@
+# Copyright (C) 2023 The WordPress Contributors
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Woo Product Field 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo_product_field\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-04-19T10:42:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: woo_product_field\n"
+
+#. Plugin Name of the plugin
+#: includes/admin/setup.php:78
+msgid "Woo Product Field"
+msgstr ""
+
+#. Author of the plugin
+msgid "The WordPress Contributors"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://woocommerce.com"
+msgstr ""
+
+#: includes/admin/class-product-fields.php:49
+msgid "New Stock"
+msgstr ""
+
+#: includes/admin/class-product-fields.php:50
+msgid "Information shown in store"
+msgstr ""
+
+#: includes/admin/class-product-fields.php:87
+msgid "New Stock Information"
+msgstr ""
+
+#. translators: %s WC download URL link.
+#: woo-product-field.php:35
+msgid "Woo Product Field requires WooCommerce to be installed and active. You can download %s here."
+msgstr ""
+
+#: woo-product-field.php:78
+msgid "Cloning is forbidden."
+msgstr ""
+
+#: woo-product-field.php:85
+msgid "Unserializing instances of this class is forbidden."
+msgstr ""
+
+#: block.json
+msgctxt "block title"
+msgid "Woo Product Field"
+msgstr ""

@@ -6,6 +6,7 @@ namespace WooProductField\Admin;
  * WooProductField Setup Class
  */
 class Setup {
+
 	/**
 	 * Constructor.
 	 *
@@ -13,7 +14,8 @@ class Setup {
 	 */
 	public function __construct() {
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_scripts' ) );
-		add_action( 'admin_menu', array( $this, 'register_page' ) );
+
+		new ProductFields();
 	}
 
 	/**
@@ -58,24 +60,4 @@ class Setup {
 		wp_enqueue_style( 'woo-product-field' );
 	}
 
-	/**
-	 * Register page in wc-admin.
-	 *
-	 * @since 1.0.0
-	 */
-	public function register_page() {
-
-		if ( ! function_exists( 'wc_admin_register_page' ) ) {
-			return;
-		}
-
-		wc_admin_register_page(
-			array(
-				'id'     => 'woo_product_field-example-page',
-				'title'  => __( 'Woo Product Field', 'woo_product_field' ),
-				'parent' => 'woocommerce',
-				'path'   => '/woo-product-field',
-			)
-		);
-	}
 }

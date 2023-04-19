@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name: Woo Product Field
- * Version: 0.1.0
+ * Version: 1.0.0
  * Author: The WordPress Contributors
  * Author URI: https://woocommerce.com
- * Text Domain: woo-product-field
+ * Text Domain: woo_product_field
  * Domain Path: /languages
  *
  * License: GNU General Public License v3.0
@@ -28,7 +28,7 @@ use WooProductField\Admin\Setup;
 /**
  * WooCommerce fallback notice.
  *
- * @since 0.1.0
+ * @since 1.0.0
  */
 function woo_product_field_missing_wc_notice() {
 	/* translators: %s WC download URL link. */
@@ -40,7 +40,7 @@ register_activation_hook( __FILE__, 'woo_product_field_activate' );
 /**
  * Activation hook.
  *
- * @since 0.1.0
+ * @since 1.0.0
  */
 function woo_product_field_activate() {
 	if ( ! class_exists( 'WooCommerce' ) ) {
@@ -68,6 +68,7 @@ if ( ! class_exists( 'woo_product_field' ) ) :
 			if ( is_admin() ) {
 				new Setup();
 			}
+			new WooProductField\Product();
 		}
 
 		/**
@@ -107,7 +108,7 @@ add_action( 'plugins_loaded', 'woo_product_field_init', 10 );
 /**
  * Initialize the plugin.
  *
- * @since 0.1.0
+ * @since 1.0.0
  */
 function woo_product_field_init() {
 	load_plugin_textdomain( 'woo_product_field', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );

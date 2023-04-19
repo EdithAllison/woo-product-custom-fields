@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "Woo Product Field",
 	"category": "widgets",
-	"textdomain": "woo-product-field",
+	"textdomain": "woo_product_field",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
 	"style": "file:./build/style-index.css"

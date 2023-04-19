@@ -2,9 +2,7 @@
 	"name": "extension/woo-product-field",
 	"description": "WooCommerce plugin",
 	"autoload": {
-		"psr-4": {
-			"WooProductField\\": "includes/"
-		}
+		"classmap": ["includes/", "includes/admin/"]
 	},
 	"require-dev": {
 		"phpunit/phpunit": "^9.0",
@@ -14,5 +12,11 @@
 		"allow-plugins": {
 			"automattic/jetpack-autoloader": true
 		}
+	},
+	"scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"make-pot": "wp i18n make-pot . languages/woo_product_field.pot --slug=woo_product_field --domain=woo_product_field --exclude=node_modules,src",
+		"make-json": "wp i18n make-json languages/ --no-purge"
 	}
 }
