@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "extension/woo-product-field",
+	"version": "0.1.0",
+	"title": "Woo Product Field",
+	"category": "widgets",
+	"textdomain": "woo-product-field",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
